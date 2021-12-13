@@ -14,7 +14,8 @@ export const LeftColumnContainer = tw.div`
     lg:col-span-3
     bg-blue-100
     rounded-2xl
-    text-center
+    // text-center
+    items-center
 `;
 
 export const RightColumnContainer = tw.div`

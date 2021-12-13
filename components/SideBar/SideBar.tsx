@@ -1,7 +1,11 @@
 import React from 'react';
-import { SideBarMainContainer, GithubIconContainer } from './SideBarStyles';
+import {
+  SideBarMainContainer,
+  GithubIconContainer,
+  GitHubContainer,
+} from './SideBarStyles';
 import Image from 'next/image';
-import { AiFillGithub } from 'react-icons/ai';
+import { FaTwitter, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 export const SideBar = () => {
   return (
@@ -15,9 +19,28 @@ export const SideBar = () => {
       <h3>Dan Deng</h3>
       <p>Full Stack Developer</p>
       <p>Downlaod Resume</p>
-      <GithubIconContainer>
-        <AiFillGithub />
-      </GithubIconContainer>
+      {/* <GithubIconContainer
+        href="https://www.linkedin.com/in/danhuideng/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaGithub />
+      </GithubIconContainer> */}
+      <div
+        style={{
+          background: 'LightBlue',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <FaGithub />
+      </div>
+      <GitHubContainer>
+        <div>
+          <FaGithub />
+        </div>
+      </GitHubContainer>
     </SideBarMainContainer>
   );
 };
